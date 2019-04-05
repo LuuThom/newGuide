@@ -1,0 +1,20 @@
+mixin selectbox({id, label,disabled, options})
+  form.form-customize&attributes(attributes)
+    .select-box
+      select.custom-select(
+        class= disabled ? `custom-select--${disabled}` : null
+        disabled = disabled ? disabled : null
+        )
+        each val in options
+          option(value= val.value)= val.display
+mixin group-selectbox({id, label, require, options})
+  form.form-customize&attributes(attributes)
+    if (require !== '' && require !== undefined)
+      label(
+        for= id ? id : null
+      )= label
+        span.require *
+    .select-box
+      select.custom-select
+        each val in options
+          option(value= val.value)= val.display

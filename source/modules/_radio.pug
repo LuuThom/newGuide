@@ -1,0 +1,33 @@
+mixin group-input-radio({name, id, label, checked, disabled})
+  .form-group.input-radio-custom(class= disabled? `input-radio--${disabled}` : null)
+    if (checked !== '' && disabled !== '' )
+      input.input-checkbox(
+        type = type ? type : "radio"
+        name= name ? name : null
+        id= id ? id :null
+        checked= checked
+        disabled= disabled
+      )
+    else if (checked !== '' && disabled == '' )
+      input.input-checkbox(
+        type = "radio"
+        name= name ? name : null
+        id= id ? id :null
+        checked= checked
+      )
+    else if (checked == '' && disabled !== '' )
+      input.input-checkbox(
+        type = type ? type : "radio"
+        name= name ? name : null
+        id= id ? id :null
+        disabled= disabled
+      )
+    else
+      input.input-chekbox(
+        type = type ? type : "radio"
+        name= name ? name : null
+        id= id ? id :null
+      )
+    label(
+      for = id ? id : null
+    )= label

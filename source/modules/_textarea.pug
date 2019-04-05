@@ -1,0 +1,11 @@
+mixin group-textarea({label, disabled, require, placeholder, row})
+  .form-group.form-customize.form-textarea
+    label
+      if (require !== '' && require !== undefined)
+        span.require *
+      | #{label}
+    textarea.form-control.form-control--textarea(
+      class= disabled ? 'form-control--disabled' : null
+      placeholder = placeholder ? placeholder : null
+      rows= row ? row : null
+    )

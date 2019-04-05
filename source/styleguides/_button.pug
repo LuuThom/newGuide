@@ -1,0 +1,302 @@
+h2 Buttons Type
+.row
+  each val in ['primary','secondary','olight','blight']
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: val
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: `#{val}`
+            | })
+
+h2 Button Disable
+.row
+  each val in ['primary','secondary','olight','blight']
+    .col-3
+      .code-example
+        .demo
+          +buttons-disable({
+            text: 'テキストデモ',
+            disabled: 'disabled',
+            type: val,
+          })
+        pre
+          code
+            | +buttons-disable({
+            |    text: 'テキストデモ',
+            |   disabled: 'disabled',
+            |   type: `#{val}`
+            | })
+h2 Button Size
+.row
+  each val in ['primary','secondary','olight','blight']
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: val,
+            size: 'xsmall'
+          })
+      pre
+        code
+          | +buttons({
+          |   text: 'テキストデモ',
+          |   type: `#{val}`,
+          |   size: 'xsmall'
+          | })
+  each val in ['primary','secondary','olight','blight']
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type:  val,
+            size: 'small'
+          })
+        pre
+          code
+            | +buttons({
+            |    text: 'テキストデモ',
+            |   type: `#{val}`,
+            |   size: 'small'
+            | })
+  each val in ['primary','secondary','olight','blight']
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: val,
+            size: 'medium'
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: `#{val}`,
+            |   size: 'medium'
+            | })
+  each val in ['primary','secondary','olight','blight']
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: val,
+            size: 'large'
+          })
+        pre
+          code
+            | +buttons({
+            |    text: 'テキストデモ',
+            |   type: `#{val}`,
+            |   size: 'large'
+            | })
+  
+h2 Button Icon
+.row
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'primary',
+          iconFont: 'ion-android-done-all'
+        })
+      pre
+        code
+          |  +buttons({
+          |   text: 'テキストデモ',
+          |   type: 'primary',
+          |   iconFont: 'ion-android-done-all'
+          | })
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'secondary',
+          iconFont: 'ion-android-done-all'
+        })
+      pre
+        code
+          |  +buttons({
+          |    text: 'テキストデモ',
+          |   type: 'secondary',
+          |   iconFont: 'ion-android-done-all'
+          | })
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'olight',
+          iconFont: 'ion-android-done-all'
+        })
+      pre
+        code
+          |  +buttons({
+          |   text: 'テキストデモ',
+          |   type: 'olight',
+          |   iconFont: 'ion-android-done-all'
+          | })
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'olight',
+          iconFont: 'ion-android-done-all'
+        })
+      pre
+        code
+          |  +buttons({
+          |   text: 'テキストデモ',
+          |   type: 'olight',
+          |   iconFont: 'ion-android-done-all'
+          | })
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'primary',
+          size: 'small',
+          iconFont: 'ion-android-done-all'
+        })
+      pre
+        code
+          | +buttons({
+          |   text: 'テキストデモ',
+          |   type: 'primary',
+          |   size: 'small',
+          |   iconFont: 'ion-android-done-all'
+          | })
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'secondary',
+          size: 'small',
+          iconFont: 'ion-android-done-all'
+        })
+      pre
+        code
+          | +buttons({
+          |   text: 'テキストデモ',
+          |   type: 'secondary',
+          |   size: 'small',
+          |   iconFont: 'ion-android-done-all'
+          | })
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'olight',
+          size: 'small',
+          iconFont: 'ion-android-done-all'
+        })
+      pre
+        code
+          | +buttons({
+          |   text: 'テキストデモ',
+          |    type: 'olight',
+          |   size: 'small',
+          |   iconFont: 'ion-android-done-all'
+          | })
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'blight',
+          size: 'small',
+          iconFont: 'ion-android-done-all'
+        })
+      pre
+        code
+          | +buttons({
+          |    text: 'テキストデモ',
+          |    type: 'blight',
+          |   size: 'small',
+          |    iconFont: 'ion-android-done-all'
+          | })
+h2 Button Full size
+.row
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'primary',
+          size: 'large',
+          isFull: true
+        })
+      pre
+        code
+          | +buttons({
+          |    text: 'テキストデモ',
+          |   type: 'primary',
+          |   size: 'large',
+          |   isFull: true
+          | })
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'secondary',
+          size: 'large',
+          isFull: true
+        })
+      pre
+        code
+          | +buttons({
+          |    text: 'テキストデモ',
+          |   type: 'secondary',
+          |   size: 'large',
+          |   isFull: true
+          | })
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'olight',
+          size: 'large',
+          isFull: true
+        })
+      pre
+        code
+          | +buttons({
+          |   text: 'テキストデモ',
+          |   type: 'olight',
+          |   size: 'large',
+          |   isFull: true
+          | })
+  .col-3
+    .code-example
+      .demo
+        +buttons({
+          text: 'テキストデモ',
+          type: 'blight',
+          size: 'large',
+          isFull: true
+        })
+      pre
+        code
+          | +buttons({
+          |    text: 'テキストデモ',
+          |   type: 'blight',
+          |   size: 'large',
+          |   isFull: true
+          | })

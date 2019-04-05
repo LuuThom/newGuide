@@ -1,0 +1,16 @@
+mixin group-input-checkbox({name, id, label, checked, disabled})
+  .form-group.input-checkbox-custom(
+    class= disabled ? 'input-checkbox--disabled' : null
+    class= label ? 'input-checkbox-custom--no-label' :null
+    )&attributes(attributes)
+      input.input-checkbox(
+        type=type ? type : "checkbox"
+        name= checkbox ? checkbox : null
+        id= id ? id : null
+        checked= (checked === true) ? true : false
+        disabled= (disabled === true) ? true : false
+    )
+      label(
+        for = id ? id : null 
+      )= label
+  
