@@ -15,7 +15,7 @@ h2 Buttons Type
             |   type: `#{val}`
             | })
 
-h2 Button Disable
+h2 aaaaaaaaaaaaaaaaaa disable
 .row
   each val in ['primary','secondary','olight','blight']
     .col-3
@@ -35,70 +35,23 @@ h2 Button Disable
             | })
 h2 Button Size
 .row
-  each val in ['primary','secondary','olight','blight']
+  each item in ['primary', 'secondary', 'olight', 'blight']
     .col-3
-      .code-example
-        .demo
-          +buttons({
-            text: 'テキストデモ',
-            type: val,
-            size: 'xsmall'
-          })
-      pre
-        code
-          | +buttons({
-          |   text: 'テキストデモ',
-          |   type: `#{val}`,
-          |   size: 'xsmall'
-          | })
-  each val in ['primary','secondary','olight','blight']
-    .col-3
-      .code-example
-        .demo
-          +buttons({
-            text: 'テキストデモ',
-            type:  val,
-            size: 'small'
-          })
-        pre
-          code
-            | +buttons({
-            |    text: 'テキストデモ',
-            |   type: `#{val}`,
-            |   size: 'small'
-            | })
-  each val in ['primary','secondary','olight','blight']
-    .col-3
-      .code-example
-        .demo
-          +buttons({
-            text: 'テキストデモ',
-            type: val,
-            size: 'medium'
-          })
-        pre
-          code
-            | +buttons({
-            |   text: 'テキストデモ',
-            |   type: `#{val}`,
-            |   size: 'medium'
-            | })
-  each val in ['primary','secondary','olight','blight']
-    .col-3
-      .code-example
-        .demo
-          +buttons({
-            text: 'テキストデモ',
-            type: val,
-            size: 'large'
-          })
-        pre
-          code
-            | +buttons({
-            |    text: 'テキストデモ',
-            |   type: `#{val}`,
-            |   size: 'large'
-            | })
+      each val in ['xsmall', 'small', 'medium', 'large']
+        .code-example
+          .demo
+            +buttons({
+              text:'テキストデモ',
+              type: item,
+              size: val,
+            })
+          pre
+            code
+              |+buttons({
+              |  text:'テキストデモ',
+              |  type: #{item},
+              |  size: #{val},
+              |})
   
 h2 Button Icon
 .row
