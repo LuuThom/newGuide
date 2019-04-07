@@ -40,7 +40,6 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-stylelint": "^6.0.0",
     "gulp-watch": "^4.3.9",
-    "ionicons": "^2.0.0",
     "install": "^0.8.1",
     "jquery": "^3.3.1",
     "npm": "^3.10.6",
