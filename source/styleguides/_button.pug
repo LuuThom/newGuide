@@ -15,7 +15,7 @@ h2 Buttons Type
             |   type: `#{val}`
             | })
 
-h2 aaaaaaaaaaaaaaaaaa disable
+h2 Buttons Disable
 .row
   each val in ['primary','secondary','olight','blight']
     .col-3
@@ -55,201 +55,58 @@ h2 Button Size
   
 h2 Button Icon
 .row
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'primary',
-          iconFont: 'ion-android-done-all'
-        })
-      pre
-        code
-          |  +buttons({
-          |   text: 'テキストデモ',
-          |   type: 'primary',
-          |   iconFont: 'ion-android-done-all'
-          | })
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'secondary',
-          iconFont: 'ion-android-done-all'
-        })
-      pre
-        code
-          |  +buttons({
-          |    text: 'テキストデモ',
-          |   type: 'secondary',
-          |   iconFont: 'ion-android-done-all'
-          | })
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'olight',
-          iconFont: 'ion-android-done-all'
-        })
-      pre
-        code
-          |  +buttons({
-          |   text: 'テキストデモ',
-          |   type: 'olight',
-          |   iconFont: 'ion-android-done-all'
-          | })
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'olight',
-          iconFont: 'ion-android-done-all'
-        })
-      pre
-        code
-          |  +buttons({
-          |   text: 'テキストデモ',
-          |   type: 'olight',
-          |   iconFont: 'ion-android-done-all'
-          | })
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'primary',
-          size: 'small',
-          iconFont: 'ion-android-done-all'
-        })
-      pre
-        code
-          | +buttons({
-          |   text: 'テキストデモ',
-          |   type: 'primary',
-          |   size: 'small',
-          |   iconFont: 'ion-android-done-all'
-          | })
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'secondary',
-          size: 'small',
-          iconFont: 'ion-android-done-all'
-        })
-      pre
-        code
-          | +buttons({
-          |   text: 'テキストデモ',
-          |   type: 'secondary',
-          |   size: 'small',
-          |   iconFont: 'ion-android-done-all'
-          | })
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'olight',
-          size: 'small',
-          iconFont: 'ion-android-done-all'
-        })
-      pre
-        code
-          | +buttons({
-          |   text: 'テキストデモ',
-          |    type: 'olight',
-          |   size: 'small',
-          |   iconFont: 'ion-android-done-all'
-          | })
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'blight',
-          size: 'small',
-          iconFont: 'ion-android-done-all'
-        })
-      pre
-        code
-          | +buttons({
-          |    text: 'テキストデモ',
-          |    type: 'blight',
-          |   size: 'small',
-          |    iconFont: 'ion-android-done-all'
-          | })
+  each val in ['primary','secondary','olight','blight']
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: val,
+            iconFont: 'ion-android-done-all'
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: `#{val}`,
+            |   iconFont: 'ion-android-done-all'
+            | })
+  each val in ['primary','secondary','olight','blight']
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: val,
+            size: 'small',
+            iconFont: 'ion-android-done-all'
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: `#{val}`,
+            |   size: 'small',
+            |   iconFont: 'ion-android-done-all'
+            | })
+  
 h2 Button Full size
 .row
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'primary',
-          size: 'large',
-          isFull: true
-        })
-      pre
-        code
-          | +buttons({
-          |    text: 'テキストデモ',
-          |   type: 'primary',
-          |   size: 'large',
-          |   isFull: true
-          | })
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'secondary',
-          size: 'large',
-          isFull: true
-        })
-      pre
-        code
-          | +buttons({
-          |    text: 'テキストデモ',
-          |   type: 'secondary',
-          |   size: 'large',
-          |   isFull: true
-          | })
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'olight',
-          size: 'large',
-          isFull: true
-        })
-      pre
-        code
-          | +buttons({
-          |   text: 'テキストデモ',
-          |   type: 'olight',
-          |   size: 'large',
-          |   isFull: true
-          | })
-  .col-3
-    .code-example
-      .demo
-        +buttons({
-          text: 'テキストデモ',
-          type: 'blight',
-          size: 'large',
-          isFull: true
-        })
-      pre
-        code
-          | +buttons({
-          |    text: 'テキストデモ',
-          |   type: 'blight',
-          |   size: 'large',
-          |   isFull: true
-          | })
+  each val in ['primary','secondary','olight','blight']
+    .col-3
+      .code-example
+        .demo
+          +buttons({
+            text: 'テキストデモ',
+            type: val,
+            size: 'large',
+            isFull: true
+          })
+        pre
+          code
+            | +buttons({
+            |   text: 'テキストデモ',
+            |   type: `#{val}`,
+            |   size: 'large',
+            |   isFull: true
+            | })
